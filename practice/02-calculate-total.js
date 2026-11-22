@@ -5,7 +5,10 @@
 // - 10 * 2 with 50% off = 10.
 
 function calculateTotal(price, quantity, discountPercent) {
-  // your code
+  const discount = price * (discountPercent / 100);
+  return (price - discount) * quantity;
+  // let total = (price * quantity) - (((discountPercent/100) * price) * quantity);
+  // return total;
 }
 
 // Expected output:

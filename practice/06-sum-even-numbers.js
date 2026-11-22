@@ -5,7 +5,16 @@
 // - sumEvenNumbers(6) = 2 + 4 + 6 = 12.
 
 function sumEvenNumbers(n) {
-  // your code
+  let sum = 0;
+  if (n=== 0 ){
+    return 0
+  }
+  for (let i = 1; i<=n ; i++){
+    if(i % 2 === 0){
+      sum = sum + i;
+    }
+  }
+  return sum;
 }
 
 // Expected output:
