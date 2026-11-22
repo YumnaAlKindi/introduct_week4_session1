@@ -5,7 +5,14 @@
 // - factorial(0) is 1.
 
 function factorial(n) {
-  // your code
+  if (n === 0){
+    return 1
+  }
+  let mul = 1;
+  for(let i = 1; i <= n ; i++){
+    mul = mul * i;
+  }
+  return mul
 }
 
 // Expected output:
